@@ -9,6 +9,7 @@ services:
       - traefik.http.routers.loadoutforge088.rule=Host(`loadoutforge088.colmena.dev`)
       - traefik.http.routers.loadoutforge088.entrypoints=websecure
       - traefik.http.routers.loadoutforge088.tls=true
+      - traefik.http.routers.loadoutforge088.tls.certresolver=letsencrypt
       - traefik.http.services.loadoutforge088.loadbalancer.server.port=9876
     networks:
       - dokploy-network
