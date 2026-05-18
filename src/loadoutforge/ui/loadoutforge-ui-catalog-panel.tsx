@@ -29,7 +29,7 @@ export function LoadoutForgeUiCatalogPanel({
   const slots = Object.keys(slotLabels) as LoadoutSlot[]
 
   return (
-    <section className="space-y-5 border-b border-white/10 p-5 xl:border-r xl:border-b-0">
+    <section className="space-y-5 border-b border-white/10 p-5 2xl:border-r 2xl:border-b-0">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2 text-sm font-semibold text-lime-300 uppercase">
           <Boxes className="size-4" />

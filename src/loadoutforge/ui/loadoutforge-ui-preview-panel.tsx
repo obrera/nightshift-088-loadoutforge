@@ -14,7 +14,7 @@ export function LoadoutForgeUiPreviewPanel({
   score: LoadoutScore
 }) {
   return (
-    <section className="space-y-5 p-5">
+    <section className="space-y-5 p-5 lg:col-span-2 2xl:col-span-1">
       <div className="flex items-center gap-2 text-sm font-semibold text-lime-300 uppercase">
         <ImageIcon className="size-4" />
         Metadata Preview
@@ -23,7 +23,7 @@ export function LoadoutForgeUiPreviewPanel({
         className="aspect-square w-full overflow-hidden rounded-md border border-white/10 bg-black"
         dangerouslySetInnerHTML={{ __html: createMetadataSvg(draft) }}
       />
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid gap-2 sm:grid-cols-3">
         <Metric icon={<Gauge className="size-4" />} label="Readiness" value={score.readiness} />
         <Metric icon={<Activity className="size-4" />} label="Power" value={score.itemPower} />
         <Metric icon={<Activity className="size-4" />} label="Synergy" value={score.synergy} />

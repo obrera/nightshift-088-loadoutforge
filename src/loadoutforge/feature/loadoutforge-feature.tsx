@@ -65,7 +65,7 @@ export function Component() {
 
   return (
     <div className="min-h-full bg-[#090b0f] text-zinc-100">
-      <div className="mx-auto max-w-7xl px-4 py-6">
+      <div className="mx-auto max-w-[90rem] px-4 py-6">
         <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
           <div>
             <div className="text-xs font-semibold text-lime-300 uppercase">Nightshift Build 088</div>
@@ -77,7 +77,7 @@ export function Component() {
           </div>
         </div>
         <div className="overflow-hidden rounded-md border border-white/10 bg-[#10151d] shadow-2xl shadow-black/30">
-          <div className="grid xl:grid-cols-[1fr_1.1fr_0.9fr]">
+          <div className="grid lg:grid-cols-[minmax(360px,0.95fr)_minmax(420px,1.05fr)] 2xl:grid-cols-[minmax(340px,0.95fr)_minmax(430px,1.15fr)_minmax(320px,0.9fr)]">
             <LoadoutForgeUiArchetypePanel
               draft={draft}
               setArchetype={setArchetype}

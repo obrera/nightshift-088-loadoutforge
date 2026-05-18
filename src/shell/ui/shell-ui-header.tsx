@@ -11,10 +11,10 @@ export interface HeaderLink {
 }
 export function ShellUiHeader({ links }: { links: HeaderLink[] }) {
   return (
-    <header className="border-b border-border/60 bg-background px-4 py-3">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4">
+    <header className="border-b border-white/10 bg-[#090b0f] px-4 py-3 text-zinc-100">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4">
         <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-center sm:gap-8">
-          <Link className="text-xl font-semibold tracking-tight" to="/">
+          <Link className="text-xl font-semibold tracking-tight text-white" to="/">
             LoadoutForge
           </Link>
           <nav aria-label="Primary" className="flex flex-wrap items-center gap-4">
@@ -23,7 +23,7 @@ export function ShellUiHeader({ links }: { links: HeaderLink[] }) {
                 className={({ isActive }) =>
                   cn(
                     'border-b-2 border-transparent px-1 py-2 text-sm font-medium transition-colors',
-                    isActive ? 'border-foreground text-foreground' : 'text-muted-foreground hover:text-foreground',
+                    isActive ? 'border-lime-300 text-white' : 'text-zinc-400 hover:text-zinc-100',
                   )
                 }
                 key={link.to}

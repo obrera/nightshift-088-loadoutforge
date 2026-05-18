@@ -23,7 +23,7 @@ export function LoadoutForgeUiArchetypePanel({
   toggleTrait: (trait: TraitId) => void
 }) {
   return (
-    <section className="space-y-4 border-b border-white/10 p-5 lg:border-r lg:border-b-0">
+    <section className="space-y-4 border-b border-white/10 p-5 lg:border-r 2xl:border-b-0">
       <div className="flex items-center gap-2 text-sm font-semibold text-lime-300 uppercase">
         <Shield className="size-4" />
         Operator Chassis
