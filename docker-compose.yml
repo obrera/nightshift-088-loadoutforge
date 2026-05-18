@@ -1,0 +1,19 @@
+services:
+  loadoutforge088:
+    build: .
+    container_name: loadoutforge088
+    environment:
+      PORT: "9876"
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.loadoutforge088.rule=Host(`loadoutforge088.colmena.dev`)
+      - traefik.http.routers.loadoutforge088.entrypoints=websecure
+      - traefik.http.routers.loadoutforge088.tls=true
+      - traefik.http.services.loadoutforge088.loadbalancer.server.port=9876
+    networks:
+      - dokploy-network
+    restart: unless-stopped
+
+networks:
+  dokploy-network:
+    external: true
